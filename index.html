@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav__logo">
+            <a href="#" class="logo">
+              <img src="images/logo.svg" class="logo-img" alt="logo" />
+            </a>
+          </div>
+          <ul class="nav__menu">
+            <li class="menu-item menu-item--isactive">
+              <a class="menu-link" href="#">Home</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">Property</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">About</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">Review</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">Blog</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <ul class="nav__sign">
+            <li class="nav__sign-button">
+              <a class="menu-link" href="#">Sign in</a>
+            </li>
+            <li class="nav__sign-button nav__sign-button--noactive">
+              <a class="menu-link" href="#">Sign up</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="hero">
+          <img src="./images/hero-bg.jpg" alt="hero-bg" class="hero__img" />
+          <div class="hero__content">
+            <h3 class="hero__vision">A Vision for Your Life</h3>
+            <h1 class="hero__title">
+              Find Your Best
+              <span>Real Estate</span>
+            </h1>
+            <p class="hero__text">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernat odit aut
+              fugit, sed quia consequuntur magni dolores qui ratione sequi
+              nesciunt.
+            </p>
+            <form action="#" class="hero__search-property">
+              <div class="hero__radio">
+                <div class="form_radio_btn">
+                  <input
+                    id="radio-1"
+                    type="radio"
+                    name="radio"
+                    value="1"
+                    checked
+                  />
+                  <label for="radio-1">Buy</label>
+                </div>
+
+                <div class="form_radio_btn">
+                  <input id="radio-2" type="radio" name="radio" value="2" />
+                  <label for="radio-2">Sell</label>
+                </div>
+
+                <div class="form_radio_btn">
+                  <input id="radio-3" type="radio" name="radio" value="3" />
+                  <label for="radio-3">Rent</label>
+                </div>
+              </div>
+              <div class="hero__select-blok">
+                <div class="hero__select-wrapper">
+                  <div
+                    class="hero__select-icon hero__select-icon-location"
+                  ></div>
+                  <select name="location" class="hero__select-item">
+                    <option value="" disabled selected hidden>Location</option>
+                    <option value="0">Germany</option>
+                    <option value="1">France</option>
+                    <option value="2">Grecee</option>
+                  </select>
+                </div>
+                <div class="hero__select-wrapper">
+                  <div class="hero__select-icon hero__select-icon-home"></div>
+                  <select name="property" class="hero__select-item">
+                    <option value="" disabled selected hidden>Property</option>
+                    <option value="0">Flat</option>
+                    <option value="1">Palace</option>
+                    <option value="2">Cantry house</option>
+                  </select>
+                </div>
+                <div class="hero__select-wrapper">
+                  <div
+                    class="hero__select-icon hero__select-icon-currency"
+                  ></div>
+                  <select name="price" class="hero__select-item">
+                    <option value="" disabled selected hidden>Price</option>
+                    <option value="0">to $100000</option>
+                    <option value="1">to $200000</option>
+                    <option value="2">from $200000</option>
+                  </select>
+                </div>
+                <button class="hero__search">
+                  <img src="./images/magnify.svg" alt="" />
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="property">
+          <h2 class="property__subtitle">Property<span>Types</span></h2>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
