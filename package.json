@@ -1,5 +1,20 @@
 {
-  "dependencies": {
-    "swiper": "^9.0.2"
-  }
+  "name": "homee",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/everjus4/home.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/everjus4/home/issues"
+  },
+  "homepage": "https://github.com/everjus4/home#readme",
+  "description": ""
 }

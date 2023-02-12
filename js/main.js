@@ -1,29 +1,24 @@
-// core version + navigation, pagination modules:
-import Swiper, { Navigation, Pagination } from 'swiper'
-// import Swiper and modules styles
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-
 // init Swiper:
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  direction: 'vertical',
   loop: true,
+  slidesPerView: 5,
+  slidesPerGroup: 5,
+  spaceBetween: 120,
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
+    hashNavigation: {
+      watchState: true,
+    },
   },
 
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+    disabledClass: 'swiper-button-prev swiper-button-next',
   },
 })
