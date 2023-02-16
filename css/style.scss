@@ -24,6 +24,9 @@ a{
     }
 }
 
+button{
+    font-family: 'Open Sans', sans-serif;
+}
 
 input:focus,
 select:focus, .form-control:focus,
@@ -564,3 +567,203 @@ body{
         }
     }
 }
+
+.about{
+    margin-top: 80px;
+
+    &__questions{
+        height: 800px;
+        margin-top: 90px;
+    }
+    &__questions, &__services{
+        display: flex;
+        justify-content:space-between;
+    }
+    &__img{
+        width: 536px;
+        height: 585px;  
+        border-radius: 4px;
+        z-index: 30;
+        filter: drop-shadow(0px 15px 20px rgba(7, 21, 42, 0.15));
+    }
+    &__wrapper-img{
+        position: relative;
+        &::before{
+            position: absolute;
+            content:'';
+            height: 585px;  
+            width: 536px; 
+            background-image: url('/images/about/border.svg');
+            top: -30px;
+            left: 30px;
+        }
+        &::after{
+            position: absolute;
+            content:'';
+            height: 187px;  
+            width: 187px; 
+            background-image: url('/images/about/Circle-effect.svg');
+            top: 500px;
+            left: -89px;
+            z-index: 0;
+        }
+    }
+    &__text{
+        width: 600px;
+        &-title{
+        display: block;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 54px;
+        color: $base-black;
+        }
+        & mark{
+            font-style: normal;
+            background: none;
+            color:$base-blue;
+            }
+
+        & p {
+            margin-top: 25px;
+            margin-bottom: 30px;
+        }
+    }
+    &__services{
+        & .about__text-title--top{
+            margin-top: 40px;
+        }
+        & ul{
+            margin-top: 30px;
+            font-size: 15px;
+            list-style-position: outside;
+            margin-left: 15px;
+        }
+        & li{
+            margin-top: 12px;
+            color: $base-black;
+            padding-left: 11px;
+            &::marker{
+                content: url('/images//about/arrow-right-thin.svg');
+                // margin-right: 10px;
+            }
+        }
+        
+        & button{
+            margin-top: 53px;
+            border: none;
+            font-size: 16px;
+            font-style: normal;
+            color:white;
+            font-weight: 400;
+            background-color: $base-blue;
+            box-shadow: 0px 3px 3px rgba(9, 23, 44, 0.25);
+            border-radius: 4px;
+            padding: 8px 20px;
+        }
+    }
+}
+
+.faq-item {
+    width: 536px;
+    min-width: 350px;
+    margin-bottom: 15px;
+}
+.item-question {
+    font-size: 17px;
+    color: $base-black;
+    border: solid 1px #D4DCE5;
+    border-radius: 4px;
+    padding: 15px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question-text {
+    display: inline-block;
+    white-space: pre;
+    vertical-align:baseline;
+}
+.question-text img{
+    vertical-align: middle;
+    padding-bottom: -30px;
+}
+.arrows-container {
+    margin: 0.4rem;
+}
+.item-answer {
+    display: none;
+    padding: 2rem;
+}
+.close {
+    display: none;
+}
+
+.show-answer .item-question{
+    border-bottom: none;
+    border-radius: 4px;
+    padding-bottom: none;
+    padding-bottom: 0px;
+}
+
+
+.show-answer .item-answer {
+    position: relative;
+    border: solid 1px #D4DCE5;
+    border-radius: 0 0 4px 4px;
+    padding: 0;
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 80px;
+    padding-right: 68px;
+    padding-bottom: 20px;
+    border-top: none;
+    display: block;
+    animation: sweep .5s ease-in-out;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.show-answer .close{
+    display: inline;
+}
+
+.show-answer .close img{
+    animation: rotate  0.5s;
+    
+}
+
+.expand img{
+        animation: rotate 0.5s forwards;
+}
+
+.show-answer .expand {
+    display: none;
+}
+
+@keyframes my_animation {
+    from {
+        top: -100px;
+        opacity: 0
+    }
+    50% {opacity: 0;}
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes sweep {
+    0%    {opacity: 0;}
+    100%  {opacity: 1;}
+  }
+
+@keyframes rotate{
+    0% {
+      transform: rotate(180deg)
+    }
+    100% {
+      transform: rotate(360deg)
+    }
+  }
