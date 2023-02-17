@@ -559,6 +559,7 @@ body{
             font-weight: 400;
             line-height: 22px;
             padding: 8px 42px 8px 20px;
+            box-shadow: 0px 3px 3px rgba(9, 23, 44, 0.25);
         }
         & img{
             position: absolute;
@@ -765,5 +766,64 @@ body{
     }
     100% {
       transform: rotate(360deg)
+    }
+  }
+
+  .counters{
+    justify-content: space-between;
+    margin-top: 180px;
+    padding: 80px 0 80px;
+    background: #F4F6F8;
+    &__cardholder{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__card{
+        position: relative;
+        display: block;
+        text-align: center;
+        overflow: hidden;
+        width: 312px;
+        height: 197px;
+        background: #FFFFFF;
+        border-radius: 4px;
+    }
+    & .card1{
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
+    }
+    & .card2{
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    & .card3{
+        filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.25));
+    }
+    & .card4{
+        filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.25));
+    }
+
+    &__img{
+        margin-top: 25px;
+        width: 45px;
+        height: 40px;
+
+    }
+    &__figures{
+        color: $base-black;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 30px;
+        padding: 16px 0 0;
+        margin: 0;
+    }
+    &__bcg{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    &__describe{
+        padding-top: 9px;
+        font-weight: 400;
+        font-size: 18px;
     }
   }
