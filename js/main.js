@@ -56,10 +56,10 @@ faqData.map((item) => {
 
   let markup = `
             <div class="item-question">
-                <span class="question-text"><img src="/images/about/icon.svg" alt="">    ${item.question}</span>
+                <span class="question-text"><img src="./images/about/icon.svg" alt="">    ${item.question}</span>
                 <span class="arrows-container">
-                    <span class="expand"><img src="/images/about/shevron-down.svg" alt=""></span>
-                    <span class="close"><img src="/images/about/shevron-up.svg" alt=""></span>
+                    <span class="expand"><img src="./images/about/shevron-down.svg" alt=""></span>
+                    <span class="close"><img src="./images/about/shevron-up.svg" alt=""></span>
                 </span>
             </div>
             <div class="item-answer">

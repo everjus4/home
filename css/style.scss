@@ -3,7 +3,7 @@ $base-black: #2A323C;
 
 @font-face {
     font-family: 'Open Sans', sans-serif;
-    src: url(../fonts/OpenSans-VariableFont_wdth,wght.ttf);
+    src: url('../fonts/OpenSans-VariableFont_wdth_wght.ttf');
 }
 
 html{
@@ -237,7 +237,7 @@ body{
             content: "";
             width: 14px;
             height: 14px;
-            background-image: url(../images/chevron-down.svg);
+            background-image: url("../images/chevron-down.svg");
             justify-self: end;
             margin-right: 12px;
             z-index: 0;
@@ -254,13 +254,13 @@ body{
             }
 
             &-location::before{
-                background-image: url(../images/map-marker.svg);
+                background-image: url('../images/map-marker.svg');
             }
             &-property::before{
-                background-image: url(../images/home.svg);
+                background-image: url('../images/home.svg');
             }
             &-price::before{
-                background-image: url(../images/currency-usd.svg);
+                background-image: url('../images/currency-usd.svg');
             }
         }
 
@@ -594,7 +594,7 @@ body{
             content:'';
             height: 585px;  
             width: 536px; 
-            background-image: url('/images/about/border.svg');
+            background-image: url('../images/about/border.svg');
             top: -30px;
             left: 30px;
         }
@@ -603,7 +603,7 @@ body{
             content:'';
             height: 187px;  
             width: 187px; 
-            background-image: url('/images/about/Circle-effect.svg');
+            background-image: url('../images/about/Circle-effect.svg');
             top: 500px;
             left: -89px;
             z-index: 0;
@@ -787,19 +787,14 @@ body{
         height: 197px;
         background: #FFFFFF;
         border-radius: 4px;
-    }
-    & .card1{
-        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
-    }
-    & .card2{
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    }
-    & .card3{
         filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.25));
+
+        &:hover{
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
     }
-    & .card4{
-        filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.25));
-    }
+
+
 
     &__img{
         margin-top: 25px;
